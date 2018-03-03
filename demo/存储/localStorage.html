@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="设置localStorage">
+<input type="button" value="获取localStorage">
+<input type="button" value="更新localStorage">
+<input type="button" value="删除localStorage">
+
+<script type="text/javascript">
+    let inputs = document.querySelectorAll("input");
+    inputs[0].onclick = function () {
+        localStorage.setItem("name","lipeng");
+    }
+
+    inputs[1].onclick = function () {
+        console.log(localStorage.getItem("name"));
+    }
+
+    inputs[2].onclick = function () {
+        localStorage.setItem("name","lipengShuaiGe");
+    }
+
+    inputs[3].onclick = function () {
+        localStorage.removeItem("name");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="设置sessionStorage">
+<input type="button" value="获取sessionStorage">
+<input type="button" value="更新sessionStorage">
+<input type="button" value="删除sessionStorage">
+
+<script type="text/javascript">
+    let inputs = document.querySelectorAll("input");
+    inputs[0].onclick = function () {
+        sessionStorage.setItem("name","lipeng");
+    }
+
+    inputs[1].onclick = function () {
+        console.log(sessionStorage.getItem("name"));
+    }
+
+    inputs[2].onclick = function () {
+        sessionStorage.setItem("name","lipengShuaiGe");
+    }
+
+    inputs[3].onclick = function () {
+        sessionStorage.removeItem("name");
+    }
+</script>
+
+</body>
+</html>
